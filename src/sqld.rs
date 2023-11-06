@@ -119,8 +119,6 @@ fn main() -> Result<(), ()> {
 
     println!("Shutting down gracefully");
     
-    // 5. spawn TCPListener to listen for protocol messages
-
     fs::remove_file(sock_path).expect("Could not remove socket file.");
 
     Ok(())
